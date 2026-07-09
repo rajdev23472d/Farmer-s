@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer's App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌾 Farmer's App</h1>
+  <p>Helping Farmers with Smart Technology</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Weather</a>
+  <a href="#">Market Price</a>
+  <a href="#">Plant Disease</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Welcome Farmer</h2>
+  <p>Get weather updates, mandi prices, crop advice and much more.</p>
+  <button>Get Started</button>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>🌦 Weather</h3>
+    <p>Check today's weather.</p>
+  </div>
+
+  <div class="card">
+    <h3>💰 Mandi Price</h3>
+    <p>View crop prices.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌿 Disease Detection</h3>
+    <p>Detect plant diseases.</p>
+  </div>
+
+  <div class="card">
+    <h3>📞 Farmer Support</h3>
+    <p>Contact agriculture experts.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
