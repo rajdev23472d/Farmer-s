@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<header>
+    <h1>🌾 Farmer's Dashboard</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h2>Welcome Farmer 👨‍🌾</h2>
+    <p>Manage your farming from one place.</p>
+</section>
+
+<section class="dashboard-grid">
+
+    <div class="card">
+        <h3>🌦 Weather</h3>
+        <p>Today's Weather</p>
+    </div>
+
+    <div class="card">
+        <h3>💰 Mandi Prices</h3>
+        <p>Latest Crop Prices</p>
+    </div>
+
+    <div class="card">
+        <h3>🌱 Crop Guide</h3>
+        <p>Crop Information</p>
+    </div>
+
+    <div class="card">
+        <h3>🤖 AI Disease Detection</h3>
+        <p>Detect Plant Diseases</p>
+    </div>
+
+    <div class="card">
+        <h3>🚜 Tractor Booking</h3>
+        <p>Book Tractor Online</p>
+    </div>
+
+    <div class="card">
+        <h3>📍 GPS Location</h3>
+        <p>Find Nearby Services</p>
+    </div>
+
+    <div class="card">
+        <h3>🛒 Marketplace</h3>
+        <p>Buy & Sell Products</p>
+    </div>
+
+    <div class="card">
+        <h3>📞 Help Center</h3>
+        <p>Contact Agriculture Experts</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Farmer's. All Rights Reserved.</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
