@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's - Profile</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<header>
+    <h1>🌾 Farmer's Profile</h1>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="profile">
+
+    <div class="profile-card">
+
+        <img src="images/farmer.png"
+             alt="Farmer"
+             width="120">
+
+        <h2>Farmer Name</h2>
+
+        <p><strong>Mobile:</strong> +91 XXXXXXXXXX</p>
+
+        <p><strong>Email:</strong> farmer@email.com</p>
+
+        <p><strong>Village:</strong> Your Village</p>
+
+        <p><strong>District:</strong> Your District</p>
+
+        <p><strong>State:</strong> Bihar</p>
+
+        <p><strong>Farm Size:</strong> 2 Acres</p>
+
+        <p><strong>Main Crop:</strong> Rice</p>
+
+        <button>Edit Profile</button>
+
+    </div>
+
+</section>
+
+<section class="farm-info">
+
+<h2>My Farm</h2>
+
+<div class="card">
+<h3>🌾 Crops</h3>
+<p>Rice, Wheat, Maize</p>
+</div>
+
+<div class="card">
+<h3>🚜 Equipment</h3>
+<p>Tractor Available</p>
+</div>
+
+<div class="card">
+<h3>💧 Irrigation</h3>
+<p>Tube Well</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Farmer's. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
