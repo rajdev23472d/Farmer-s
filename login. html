@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>🌾 Farmer's</h1>
+        <h2>Farmer Login</h2>
+
+        <form action="dashboard.html">
+
+            <label>Email</label>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+            <label>Password</label>
+            <input
+                type="password"
+                placeholder="Enter your password"
+                required>
+
+            <div class="remember">
+                <input type="checkbox">
+                Remember Me
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">
+                Register
+            </a>
+        </p>
+
+        <p>
+            <a href="index.html">
+                ← Back to Home
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
