@@ -1,0 +1,49 @@
+// =====================================
+// Farmer-s App
+// mandi.js
+// Volume 4
+// =====================================
+
+// Demo Mandi Prices
+
+const mandiPrices = {
+    wheat: 2600,
+    rice: 3200,
+    maize: 2200,
+    potato: 1800,
+    onion: 2400
+};
+
+// Display Prices
+
+function loadPrices() {
+
+    document.getElementById("wheatPrice").innerHTML = "₹ " + mandiPrices.wheat;
+
+    document.getElementById("ricePrice").innerHTML = "₹ " + mandiPrices.rice;
+
+    document.getElementById("maizePrice").innerHTML = "₹ " + mandiPrices.maize;
+
+    document.getElementById("potatoPrice").innerHTML = "₹ " + mandiPrices.potato;
+
+    document.getElementById("onionPrice").innerHTML = "₹ " + mandiPrices.onion;
+}
+
+// Refresh Prices
+
+function refreshPrices() {
+
+    alert("Mandi Prices Updated Successfully!");
+
+    loadPrices();
+}
+
+// Run on Page Load
+
+window.onload = loadPrices;
+
+// Button Event
+
+document
+.getElementById("refreshPrice")
+.addEventListener("click", refreshPrices);
