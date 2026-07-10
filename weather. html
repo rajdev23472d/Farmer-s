@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer's - Weather</title>
+
+<link rel="stylesheet" href="css/weather.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>🌦 Farmer's Weather</h1>
+
+<nav>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="index.html">Home</a>
+
+<a href="mandi.html">Mandi</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="weather">
+
+<h2>Today's Weather</h2>
+
+<div class="weather-card">
+
+<h1 id="temperature">--°C</h1>
+
+<h3 id="city">Your Location</h3>
+
+<p id="condition">
+Loading Weather...
+</p>
+
+<button onclick="getWeather()">
+Refresh Weather
+</button>
+
+</div>
+
+</section>
+
+<section class="forecast">
+
+<h2>5 Day Forecast</h2>
+
+<div class="forecast-grid">
+
+<div class="day">
+<h3>Day 1</h3>
+<p>--°C</p>
+</div>
+
+<div class="day">
+<h3>Day 2</h3>
+<p>--°C</p>
+</div>
+
+<div class="day">
+<h3>Day 3</h3>
+<p>--°C</p>
+</div>
+
+<div class="day">
+<h3>Day 4</h3>
+<p>--°C</p>
+</div>
+
+<div class="day">
+<h3>Day 5</h3>
+<p>--°C</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Farmer's App
+</p>
+
+</footer>
+
+<script src="js/weather.js"></script>
+
+</body>
+</html>
