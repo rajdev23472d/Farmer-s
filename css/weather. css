@@ -1,0 +1,156 @@
+/* =====================================
+   Farmer's App - Weather CSS
+   Volume 2
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef7ff;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2e7d32;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* Weather Section */
+
+.weather{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.weather h2{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.weather-card{
+    width:350px;
+    max-width:90%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.weather-card h1{
+    font-size:55px;
+    color:#2e7d32;
+}
+
+.weather-card h3{
+    margin:15px 0;
+}
+
+.weather-card p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.weather-card button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.weather-card button:hover{
+    background:#1b5e20;
+}
+
+/* Forecast */
+
+.forecast{
+    padding:40px 20px;
+}
+
+.forecast h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2e7d32;
+}
+
+.forecast-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.day{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+.day h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.weather-card{
+    width:100%;
+}
+
+}
