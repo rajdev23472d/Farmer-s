@@ -1,0 +1,34 @@
+// =====================================
+// Farmer-s App - Weather JS
+// Volume 2
+// =====================================
+
+// Weather Data (Demo)
+
+const weather = {
+    city: "Patna",
+    temperature: 31,
+    condition: "Sunny",
+    humidity: 65,
+    wind: 12
+};
+
+// HTML Elements
+
+document.getElementById("city").innerText = weather.city;
+document.getElementById("temp").innerText = weather.temperature + "°C";
+document.getElementById("condition").innerText = weather.condition;
+document.getElementById("humidity").innerText =
+    "Humidity: " + weather.humidity + "%";
+document.getElementById("wind").innerText =
+    "Wind Speed: " + weather.wind + " km/h";
+
+// Refresh Button
+
+function refreshWeather() {
+    alert("Weather Updated Successfully!");
+}
+
+document
+.getElementById("refreshBtn")
+.addEventListener("click", refreshWeather);
