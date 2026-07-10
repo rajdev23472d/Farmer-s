@@ -1,0 +1,79 @@
+/* =====================================
+   Farmer-s App
+   maps.js
+   Volume 3
+===================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const locationBtn = document.getElementById("locationBtn");
+    const locationText = document.getElementById("locationText");
+
+    if (locationBtn) {
+        locationBtn.addEventListener("click", getCurrentLocation);
+    }
+
+    function getCurrentLocation() {
+
+        if (!navigator.geolocation) {
+            locationText.innerHTML =
+                "❌ Geolocation is not supported by your browser.";
+            return;
+        }
+
+        locationText.innerHTML = "📍 Getting your location...";
+
+        navigator.geolocation.getCurrentPosition(
+
+            function(position){
+
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+
+                locationText.innerHTML =
+                    "<b>Latitude:</b> " + lat +
+                    "<br><b>Longitude:</b> " + lng;
+
+                // Update Google Map
+                const map = document.querySelector("iframe");
+
+                if(map){
+                    map.src =
+                    "https://maps.google.com/maps?q=" +
+                    lat + "," + lng +
+                    "&z=15&output=embed";
+                }
+
+            },
+
+            function(error){
+
+                switch(error.code){
+
+                    case error.PERMISSION_DENIED:
+                        locationText.innerHTML =
+                        "❌ Location permission denied.";
+                        break;
+
+                    case error.POSITION_UNAVAILABLE:
+                        locationText.innerHTML =
+                        "❌ Location unavailable.";
+                        break;
+
+                    case error.TIMEOUT:
+                        locationText.innerHTML =
+                        "❌ Location request timed out.";
+                        break;
+
+                    default:
+                        locationText.innerHTML =
+                        "❌ Unknown error occurred.";
+                }
+
+            }
+
+        );
+
+    }
+
+});
