@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer-s | GPS Location</title>
+
+    <link rel="stylesheet" href="css/maps.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 Farmer-s GPS</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="maps.html">Maps</a>
+        <a href="weather.html">Weather</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<section class="map-section">
+
+    <h2>Current GPS Location</h2>
+
+    <div class="map-card">
+
+        <button id="locationBtn">
+            📍 Get Current Location
+        </button>
+
+        <br><br>
+
+        <p id="locationText">
+            Your location will appear here.
+        </p>
+
+        <br>
+
+        <iframe
+            src="https://maps.google.com/maps?q=India&z=5&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Farmer-s. All Rights Reserved.</p>
+</footer>
+
+<script src="js/maps.js"></script>
+<script src="js/gps.js"></script>
+
+</body>
+</html>
