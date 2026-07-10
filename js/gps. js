@@ -1,0 +1,40 @@
+// =====================================
+// Farmer-s App
+// GPS.js
+// =====================================
+
+const locationBtn = document.getElementById("locationBtn");
+const locationText = document.getElementById("locationText");
+
+locationBtn.addEventListener("click", getLocation);
+
+function getLocation() {
+
+    if (!navigator.geolocation) {
+        locationText.innerHTML = "Geolocation is not supported.";
+        return;
+    }
+
+    locationText.innerHTML = "Getting your location...";
+
+    navigator.geolocation.getCurrentPosition(
+        success,
+        error
+    );
+}
+
+function success(position) {
+
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    locationText.innerHTML =
+        "Latitude: " + latitude +
+        "<br>Longitude: " + longitude;
+}
+
+function error() {
+
+    locationText.innerHTML =
+        "Unable to access your location.";
+}
