@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Notifications</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🔔 Farmer-s Notifications</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="weather.html">Weather</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="community.html">Community</a>
+<a href="notifications.html">Notifications</a>
+<a href="settings.html">Settings</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="notifications">
+
+<h2>Latest Notifications</h2>
+
+<div id="notificationList">
+
+<div class="notification-card">
+
+<h3>🌦 Weather Alert</h3>
+
+<p>Heavy rainfall expected tomorrow. Protect your crops.</p>
+
+<small>Today - 8:30 AM</small>
+
+</div>
+
+<div class="notification-card">
+
+<h3>💰 Government Scheme</h3>
+
+<p>PM-Kisan installment has been released.</p>
+
+<small>Yesterday - 5:00 PM</small>
+
+</div>
+
+<div class="notification-card">
+
+<h3>📈 Mandi Update</h3>
+
+<p>Wheat price increased by ₹120 per quintal.</p>
+
+<small>Yesterday - 11:15 AM</small>
+
+</div>
+
+<div class="notification-card">
+
+<h3>🚜 Equipment Booking</h3>
+
+<p>Your tractor booking has been confirmed.</p>
+
+<small>2 Days Ago</small>
+
+</div>
+
+</div>
+
+<br>
+
+<button onclick="clearNotifications()">
+
+🗑 Clear Notifications
+
+</button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/notifications.js"></script>
+
+</body>
+
+</html>
