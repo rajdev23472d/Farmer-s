@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Privacy Policy</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🔒 Farmer-s Privacy Policy</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="help.html">Help</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="settings.html">Settings</a>
+
+</nav>
+
+</header>
+
+<section class="settings">
+
+<h2>Privacy Policy</h2>
+
+<div class="notification-card">
+
+<h3>1. Information We Collect</h3>
+
+<p>
+
+We may collect your name, email, mobile number, location, and farming information to provide better services.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>2. How We Use Your Information</h3>
+
+<p>
+
+Your information is used to improve app features, weather updates, marketplace services, equipment booking, and customer support.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>3. Data Security</h3>
+
+<p>
+
+We use reasonable security measures to protect your personal information from unauthorized access.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>4. Location Access</h3>
+
+<p>
+
+Location permission is used only to provide nearby weather, GPS navigation, and local farming services.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>5. Third-Party Services</h3>
+
+<p>
+
+Some services such as maps, weather APIs, and payment gateways may use trusted third-party providers.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>6. User Rights</h3>
+
+<p>
+
+You can update or delete your account information at any time from the Settings page.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>7. Contact Us</h3>
+
+<p>
+
+For any privacy-related questions, contact us at:
+
+<br><br>
+
+📧 support@farmer-s.com
+
+<br>
+
+📞 +91-9876543210
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>8. Policy Updates</h3>
+
+<p>
+
+This Privacy Policy may be updated from time to time. Please check this page regularly for any changes.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
