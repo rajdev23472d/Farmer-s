@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | About</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>ℹ️ About Farmer-s</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="weather.html">Weather</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="community.html">Community</a>
+<a href="settings.html">Settings</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="settings">
+
+<h2>About Farmer-s</h2>
+
+<div class="notification-card">
+
+<h3>🌾 Our Mission</h3>
+
+<p>
+
+Farmer-s is a smart agriculture platform designed to help farmers with modern technology. Our goal is to make farming easier, smarter, and more profitable.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>🚀 Features</h3>
+
+<ul>
+
+<li>🌦 Live Weather Updates</li>
+
+<li>📈 Mandi Price Information</li>
+
+<li>🤖 AI Crop Disease Detection</li>
+
+<li>🚜 Equipment Booking</li>
+
+<li>🛒 Marketplace</li>
+
+<li>💬 Farmer Community Chat</li>
+
+<li>💰 Farm Finance Manager</li>
+
+<li>🔔 Notifications</li>
+
+</ul>
+
+</div>
+
+<div class="notification-card">
+
+<h3>🎯 Vision</h3>
+
+<p>
+
+To empower every farmer with digital tools, expert guidance, and easy access to farming services.
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>📌 Version</h3>
+
+<p>
+
+Farmer-s App Version 1.0.0
+
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>❤️ Thank You</h3>
+
+<p>
+
+Thank you for using Farmer-s. Together, we are building a smarter future for agriculture.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
