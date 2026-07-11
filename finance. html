@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Finance</title>
+
+<link rel="stylesheet" href="css/finance.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>💰 Farmer-s Finance</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="equipment.html">Equipment</a>
+<a href="community.html">Community</a>
+<a href="finance.html">Finance</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="finance">
+
+<h2>Farm Finance Manager</h2>
+
+<p>Track your farm income and expenses easily.</p>
+
+<form id="financeForm">
+
+<input
+type="text"
+id="title"
+placeholder="Income / Expense Title"
+required>
+
+<br><br>
+
+<input
+type="number"
+id="amount"
+placeholder="Amount (₹)"
+required>
+
+<br><br>
+
+<select id="type" required>
+
+<option value="">Select Type</option>
+
+<option value="Income">💰 Income</option>
+
+<option value="Expense">💸 Expense</option>
+
+</select>
+
+<br><br>
+
+<input
+type="date"
+id="date"
+required>
+
+<br><br>
+
+<button type="submit">
+
+➕ Save Record
+
+</button>
+
+</form>
+
+<hr>
+
+<h3>📋 Finance Records</h3>
+
+<div id="financeList">
+
+<p>No records available.</p>
+
+</div>
+
+<hr>
+
+<h3>📊 Summary</h3>
+
+<p>Total Income: ₹<span id="income">0</span></p>
+
+<p>Total Expense: ₹<span id="expense">0</span></p>
+
+<p><strong>Profit: ₹<span id="profit">0</span></strong></p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/finance.js"></script>
+
+</body>
+
+</html>
