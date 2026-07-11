@@ -1,0 +1,172 @@
+/* =====================================
+   Farmer-s App
+   Finance CSS
+   Volume 9
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5fff5;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2e7d32;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* Finance Section */
+
+.finance{
+    max-width:900px;
+    margin:40px auto;
+    padding:25px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.finance h2{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.finance p{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Form */
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:2px solid #2e7d32;
+    border-radius:8px;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+/* Records */
+
+#financeList{
+    margin-top:20px;
+}
+
+.record-card{
+    background:#f8fff8;
+    border-left:6px solid #2e7d32;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.record-card h3{
+    color:#2e7d32;
+    margin-bottom:8px;
+}
+
+.record-card p{
+    text-align:left;
+    margin:4px 0;
+}
+
+/* Summary */
+
+#income{
+    color:green;
+    font-weight:bold;
+}
+
+#expense{
+    color:red;
+    font-weight:bold;
+}
+
+#profit{
+    color:#1565c0;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav a{
+    display:block;
+    margin:8px 0;
+}
+
+.finance{
+    margin:20px;
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}
