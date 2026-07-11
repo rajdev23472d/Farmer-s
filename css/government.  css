@@ -1,0 +1,143 @@
+/* =====================================
+   Farmer-s App
+   Government Schemes CSS
+   Volume 5
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2e7d32;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* Government Section */
+
+.government-section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.government-section h2{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:25px;
+}
+
+/* Search Box */
+
+#searchBox{
+    width:100%;
+    padding:12px;
+    border:2px solid #2e7d32;
+    border-radius:8px;
+    margin-bottom:30px;
+    font-size:16px;
+}
+
+/* Scheme Card */
+
+.scheme-card{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.15);
+}
+
+.scheme-card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.scheme-card p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.scheme-card button{
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.scheme-card button:hover{
+    background:#1b5e20;
+}
+
+/* Footer */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.government-section{
+    padding:20px;
+}
+
+.scheme-card{
+    padding:15px;
+}
+
+#searchBox{
+    font-size:15px;
+}
+
+}
