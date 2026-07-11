@@ -1,0 +1,144 @@
+/* =====================================
+   Farmer-s App
+   booking.js
+   Volume 8
+===================================== */
+
+const bookingForm = document.getElementById("bookingForm");
+const bookingMessage = document.getElementById("bookingMessage");
+
+let bookingHistory =
+JSON.parse(localStorage.getItem("bookingHistory")) || [];
+
+bookingForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const farmerName =
+    document.getElementById("farmerName").value;
+
+    const mobile =
+    document.getElementById("mobile").value;
+
+    const equipment =
+    document.getElementById("equipment").value;
+
+    const bookingDate =
+    document.getElementById("bookingDate").value;
+
+    const bookingTime =
+    document.getElementById("bookingTime").value;
+
+    const address =
+    document.getElementById("address").value;
+
+    const booking = {
+
+        farmerName,
+        mobile,
+        equipment,
+        bookingDate,
+        bookingTime,
+        address,
+        status: "Confirmed"
+
+    };
+
+    bookingHistory.push(booking);
+
+    localStorage.setItem(
+        "bookingHistory",
+        JSON.stringify(bookingHistory)
+    );
+
+    bookingMessage.innerHTML = `
+
+    <div style="
+    background:#d4edda;
+    color:#155724;
+    padding:15px;
+    margin-top:20px;
+    border-radius:8px;
+    ">
+
+    <h3>✅ Booking Confirmed</h3>
+
+    <p><b>Farmer:</b> ${farmerName}</p>
+
+    <p><b>Equipment:</b> ${equipment}</p>
+
+    <p><b>Date:</b> ${bookingDate}</p>
+
+    <p><b>Time:</b> ${bookingTime}</p>
+
+    <p><b>Status:</b> Confirmed</p>
+
+    </div>
+
+    `;
+
+    bookingForm.reset();
+
+});
+
+// Show Booking History
+
+function showBookingHistory(){
+
+    if(bookingHistory.length===0){
+
+        alert("No Booking History Found.");
+
+        return;
+
+    }
+
+    let message = "📋 Booking History\n\n";
+
+    bookingHistory.forEach(function(item,index){
+
+        message +=
+
+        (index+1)+". "
+
+        + item.farmerName +
+
+        "\nEquipment: "
+
+        + item.equipment +
+
+        "\nDate: "
+
+        + item.bookingDate +
+
+        "\nTime: "
+
+        + item.bookingTime +
+
+        "\nStatus: "
+
+        + item.status +
+
+        "\n\n";
+
+    });
+
+    alert(message);
+
+}
+
+// Cancel All Bookings
+
+function cancelBookings(){
+
+    if(confirm("Cancel all bookings?")){
+
+        bookingHistory = [];
+
+        localStorage.removeItem("bookingHistory");
+
+        alert("All bookings cancelled.");
+
+    }
+
+}
