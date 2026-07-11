@@ -1,0 +1,102 @@
+/* =====================================
+   Farmer-s App
+   marketplace.js
+   Volume 6
+===================================== */
+
+let cart = [];
+
+// Add Product to Cart
+function addToCart(productName, price){
+
+    cart.push({
+        name: productName,
+        price: price
+    });
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    alert(productName + " added to cart!");
+
+    updateCartCount();
+}
+
+// Update Cart Counter
+function updateCartCount(){
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    if(cartCount){
+
+        cartCount.innerHTML = cart.length;
+
+    }
+
+}
+
+// Search Products
+const searchBox = document.getElementById("searchBox");
+
+if(searchBox){
+
+searchBox.addEventListener("keyup", function(){
+
+    const value =
+        this.value.toLowerCase();
+
+    const products =
+        document.querySelectorAll(".product-card");
+
+    products.forEach(function(product){
+
+        const text =
+            product.innerText.toLowerCase();
+
+        if(text.includes(value)){
+
+            product.style.display = "block";
+
+        }else{
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+});
+
+}
+
+// Load Cart
+window.onload = function(){
+
+    const savedCart =
+        localStorage.getItem("cart");
+
+    if(savedCart){
+
+        cart = JSON.parse(savedCart);
+
+    }
+
+    updateCartCount();
+
+};
+
+// Clear Cart
+function clearCart(){
+
+    cart = [];
+
+    localStorage.removeItem("cart");
+
+    updateCartCount();
+
+    alert("Cart Cleared!");
+
+}
