@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Help & FAQ</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>❓ Farmer-s Help Center</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="settings.html">Settings</a>
+<a href="contact.html">Contact</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="settings">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="notification-card">
+
+<h3>1. How do I register?</h3>
+
+<p>
+Open <b>Register</b> page, enter your details and create your account.
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>2. How can I check weather?</h3>
+
+<p>
+Go to the <b>Weather</b> page from the dashboard to view weather updates.
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>3. How do I book equipment?</h3>
+
+<p>
+Open the <b>Equipment</b> page, choose a machine and click <b>Book Now</b>.
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>4. How do I buy products?</h3>
+
+<p>
+Visit the <b>Marketplace</b>, add products to the cart and complete checkout.
+</p>
+
+</div>
+
+<div class="notification-card">
+
+<h3>5. How do I contact support?</h3>
+
+<p>
+Open the <b>Contact</b> page and send your message to the support team.
+</p>
+
+</div>
+
+<h2>Need More Help?</h2>
+
+<p style="text-align:center;">
+
+Click the button below to contact our support team.
+
+</p>
+
+<br>
+
+<a href="contact.html">
+
+<button>
+
+📞 Contact Support
+
+</button>
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
