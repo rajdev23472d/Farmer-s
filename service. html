@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Agriculture Services</title>
+
+<link rel="stylesheet" href="css/equipment.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌾 Farmer-s Services</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="weather.html">Weather</a>
+
+<a href="marketplace.html">Marketplace</a>
+
+<a href="equipment.html">Equipment</a>
+
+<a href="community.html">Community</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="equipment">
+
+<h2>Agriculture Services</h2>
+
+<p>Select a service you need.</p>
+
+<div class="equipment-grid">
+
+<div class="equipment-card">
+
+<img src="images/mechanic.jpg" alt="Mechanic">
+
+<h3>🔧 Tractor Mechanic</h3>
+
+<p>Repair & Maintenance Service</p>
+
+<button onclick="alert('Mechanic Request Sent Successfully!')">
+Request Service
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/soil.jpg" alt="Soil Test">
+
+<h3>🌱 Soil Testing</h3>
+
+<p>Professional Soil Health Analysis</p>
+
+<button onclick="alert('Soil Testing Booked!')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/drone.jpg" alt="Drone Spray">
+
+<h3>🚁 Drone Spraying</h3>
+
+<p>Modern Crop Spraying Service</p>
+
+<button onclick="alert('Drone Service Booked!')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/transport.jpg" alt="Transport">
+
+<h3>🚛 Crop Transport</h3>
+
+<p>Transport Crops to Market</p>
+
+<button onclick="alert('Transport Booked!')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/consultant.jpg" alt="Consultant">
+
+<h3>👨‍🌾 Agriculture Expert</h3>
+
+<p>Talk to Farming Experts</p>
+
+<button onclick="alert('Expert Consultation Requested!')">
+Consult Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/irrigation.jpg" alt="Irrigation">
+
+<h3>💧 Irrigation Service</h3>
+
+<p>Drip & Sprinkler Installation</p>
+
+<button onclick="alert('Irrigation Service Booked!')">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Farmer-s. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
