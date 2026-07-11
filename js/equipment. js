@@ -1,0 +1,119 @@
+/* =====================================
+   Farmer-s App
+   equipment.js
+   Volume 8
+===================================== */
+
+let bookings = JSON.parse(localStorage.getItem("equipmentBookings")) || [];
+
+// Search Equipment
+
+const searchEquipment = document.getElementById("searchEquipment");
+
+if (searchEquipment) {
+
+    searchEquipment.addEventListener("keyup", function () {
+
+        const value = this.value.toLowerCase();
+
+        const cards = document.querySelectorAll(".equipment-card");
+
+        cards.forEach(function(card){
+
+            const text = card.innerText.toLowerCase();
+
+            if(text.includes(value)){
+
+                card.style.display = "block";
+
+            }else{
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
+
+// Book Equipment
+
+function bookEquipment(name){
+
+    const date = new Date().toLocaleString();
+
+    const booking = {
+        equipment: name,
+        bookingTime: date,
+        status: "Booked"
+    };
+
+    bookings.push(booking);
+
+    localStorage.setItem(
+        "equipmentBookings",
+        JSON.stringify(bookings)
+    );
+
+    alert(
+        "✅ Booking Successful!\n\n" +
+        "Equipment: " + name +
+        "\nStatus: Booked"
+    );
+
+}
+
+// View Booking History
+
+function viewBookings(){
+
+    if(bookings.length === 0){
+
+        alert("No bookings found.");
+
+        return;
+
+    }
+
+    let message = "📋 Booking History\n\n";
+
+    bookings.forEach(function(item,index){
+
+        message +=
+        (index+1) + ". " +
+        item.equipment +
+        "\n📅 " + item.bookingTime +
+        "\nStatus: " + item.status +
+        "\n\n";
+
+    });
+
+    alert(message);
+
+}
+
+// Cancel All Bookings
+
+function clearBookings(){
+
+    if(confirm("Cancel all bookings?")){
+
+        bookings = [];
+
+        localStorage.removeItem("equipmentBookings");
+
+        alert("All bookings cancelled.");
+
+    }
+
+}
+
+// Page Loaded
+
+window.onload = function(){
+
+    console.log("Equipment Rental Module Loaded");
+
+};
