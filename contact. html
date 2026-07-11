@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Contact Us</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📞 Contact Farmer-s Support</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="help.html">Help</a>
+<a href="about.html">About</a>
+<a href="settings.html">Settings</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="settings">
+
+<h2>Contact Support</h2>
+
+<p style="text-align:center;">
+Need help? Fill out the form below and our support team will contact you.
+</p>
+
+<form id="contactForm">
+
+<label><b>👤 Full Name</b></label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+<br><br>
+
+<label><b>📧 Email</b></label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+<br><br>
+
+<label><b>📱 Mobile Number</b></label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter your mobile number"
+required>
+
+<br><br>
+
+<label><b>📝 Subject</b></label>
+
+<input
+type="text"
+id="subject"
+placeholder="Enter subject"
+required>
+
+<br><br>
+
+<label><b>💬 Message</b></label>
+
+<textarea
+id="message"
+rows="6"
+placeholder="Write your message here..."
+required></textarea>
+
+<br><br>
+
+<button type="submit">
+
+📨 Send Message
+
+</button>
+
+</form>
+
+<div id="successMessage"></div>
+
+</section>
+
+<footer>
+
+<p>
+
+📧 Email: support@farmer-s.com
+
+</p>
+
+<p>
+
+📞 Phone: +91-9876543210
+
+</p>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document.getElementById("successMessage").innerHTML =
+
+"<h3 style='color:green;text-align:center;'>✅ Your message has been sent successfully!</h3>";
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>
