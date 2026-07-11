@@ -1,0 +1,148 @@
+/* =====================================
+   Farmer-s App
+   finance.js
+   Volume 9
+===================================== */
+
+const financeForm = document.getElementById("financeForm");
+const financeList = document.getElementById("financeList");
+
+const incomeText = document.getElementById("income");
+const expenseText = document.getElementById("expense");
+const profitText = document.getElementById("profit");
+
+let records =
+JSON.parse(localStorage.getItem("financeRecords")) || [];
+
+// Save Record
+
+financeForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const title =
+    document.getElementById("title").value;
+
+    const amount =
+    Number(document.getElementById("amount").value);
+
+    const type =
+    document.getElementById("type").value;
+
+    const date =
+    document.getElementById("date").value;
+
+    records.push({
+        title,
+        amount,
+        type,
+        date
+    });
+
+    localStorage.setItem(
+        "financeRecords",
+        JSON.stringify(records)
+    );
+
+    financeForm.reset();
+
+    loadRecords();
+
+});
+
+// Load Records
+
+function loadRecords(){
+
+    financeList.innerHTML = "";
+
+    if(records.length === 0){
+
+        financeList.innerHTML =
+        "<p>No records available.</p>";
+
+    }
+
+    let income = 0;
+    let expense = 0;
+
+    records.forEach(function(record,index){
+
+        if(record.type === "Income"){
+
+            income += record.amount;
+
+        }else{
+
+            expense += record.amount;
+
+        }
+
+        financeList.innerHTML += `
+
+        <div class="record-card">
+
+        <h3>${record.title}</h3>
+
+        <p><b>Type:</b> ${record.type}</p>
+
+        <p><b>Amount:</b> ₹${record.amount}</p>
+
+        <p><b>Date:</b> ${record.date}</p>
+
+        <button onclick="deleteRecord(${index})">
+        Delete
+        </button>
+
+        </div>
+
+        `;
+
+    });
+
+    incomeText.innerHTML = income;
+
+    expenseText.innerHTML = expense;
+
+    profitText.innerHTML = income - expense;
+
+}
+
+// Delete Record
+
+function deleteRecord(index){
+
+    if(confirm("Delete this record?")){
+
+        records.splice(index,1);
+
+        localStorage.setItem(
+            "financeRecords",
+            JSON.stringify(records)
+        );
+
+        loadRecords();
+
+    }
+
+}
+
+// Clear All Records
+
+function clearFinance(){
+
+    if(confirm("Delete all records?")){
+
+        records = [];
+
+        localStorage.removeItem("financeRecords");
+
+        loadRecords();
+
+    }
+
+}
+
+// Page Load
+
+window.onload = loadRecords;
