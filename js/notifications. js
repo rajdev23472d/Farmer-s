@@ -1,0 +1,145 @@
+/* =====================================
+   Farmer-s App
+   notifications.js
+   Volume 10
+===================================== */
+
+let notifications =
+JSON.parse(localStorage.getItem("notifications")) || [
+
+{
+title:"🌦 Weather Alert",
+message:"Heavy rainfall expected tomorrow. Protect your crops.",
+time:"Today"
+},
+
+{
+title:"💰 Government Scheme",
+message:"PM-Kisan installment has been released.",
+time:"Yesterday"
+},
+
+{
+title:"📈 Mandi Update",
+message:"Wheat price increased by ₹120 per quintal.",
+time:"Yesterday"
+}
+
+];
+
+const notificationList =
+document.getElementById("notificationList");
+
+// Load Notifications
+
+function loadNotifications(){
+
+notificationList.innerHTML = "";
+
+if(notifications.length===0){
+
+notificationList.innerHTML =
+"<p>No notifications available.</p>";
+
+return;
+
+}
+
+notifications.forEach(function(item,index){
+
+notificationList.innerHTML += `
+
+<div class="notification-card">
+
+<h3>${item.title}</h3>
+
+<p>${item.message}</p>
+
+<small>${item.time}</small>
+
+<br><br>
+
+<button onclick="deleteNotification(${index})">
+
+Delete
+
+</button>
+
+</div>
+
+`;
+
+});
+
+}
+
+// Add Notification
+
+function addNotification(title,message){
+
+const today =
+new Date().toLocaleString();
+
+notifications.unshift({
+
+title:title,
+message:message,
+time:today
+
+});
+
+saveNotifications();
+
+loadNotifications();
+
+}
+
+// Delete Notification
+
+function deleteNotification(index){
+
+if(confirm("Delete this notification?")){
+
+notifications.splice(index,1);
+
+saveNotifications();
+
+loadNotifications();
+
+}
+
+}
+
+// Clear All Notifications
+
+function clearNotifications(){
+
+if(confirm("Clear all notifications?")){
+
+notifications=[];
+
+saveNotifications();
+
+loadNotifications();
+
+}
+
+}
+
+// Save LocalStorage
+
+function saveNotifications(){
+
+localStorage.setItem(
+
+"notifications",
+
+JSON.stringify(notifications)
+
+);
+
+}
+
+// Auto Load
+
+window.onload = loadNotifications;
