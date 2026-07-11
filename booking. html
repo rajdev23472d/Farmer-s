@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Equipment Booking</title>
+
+<link rel="stylesheet" href="css/equipment.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📅 Farmer-s Booking</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="equipment.html">Equipment</a>
+
+<a href="marketplace.html">Marketplace</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="equipment">
+
+<h2>Book Farming Equipment</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="farmerName"
+placeholder="Farmer Name"
+required>
+
+<br><br>
+
+<input
+type="tel"
+id="mobile"
+placeholder="Mobile Number"
+required>
+
+<br><br>
+
+<select id="equipment" required>
+
+<option value="">Select Equipment</option>
+
+<option>🚜 Tractor</option>
+
+<option>🌾 Harvester</option>
+
+<option>🌱 Rotavator</option>
+
+<option>💧 Water Tanker</option>
+
+<option>🌿 Seed Drill</option>
+
+</select>
+
+<br><br>
+
+<input
+type="date"
+id="bookingDate"
+required>
+
+<br><br>
+
+<input
+type="time"
+id="bookingTime"
+required>
+
+<br><br>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Enter Farm Address"
+required>
+</textarea>
+
+<br><br>
+
+<button type="submit">
+
+✅ Confirm Booking
+
+</button>
+
+</form>
+
+<br>
+
+<div id="bookingMessage"></div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>
