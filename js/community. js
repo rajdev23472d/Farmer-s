@@ -1,0 +1,117 @@
+/* =====================================
+   Farmer-s App
+   community.js
+   Volume 7
+===================================== */
+
+const postBtn = document.getElementById("postBtn");
+const postText = document.getElementById("postText");
+const posts = document.getElementById("posts");
+const searchPost = document.getElementById("searchPost");
+
+// Create Post
+
+postBtn.addEventListener("click", function () {
+
+    const text = postText.value.trim();
+
+    if (text === "") {
+        alert("Please write something first.");
+        return;
+    }
+
+    const card = document.createElement("div");
+
+    card.className = "post-card";
+
+    card.innerHTML = `
+        <h3>👨‍🌾 You</h3>
+        <p>${text}</p>
+
+        <button class="likeBtn">👍 Like</button>
+
+        <button class="commentBtn">💬 Comment</button>
+
+        <button class="deleteBtn">🗑 Delete</button>
+    `;
+
+    posts.prepend(card);
+
+    postText.value = "";
+
+    addEvents();
+
+});
+
+// Like, Comment, Delete Events
+
+function addEvents() {
+
+    document.querySelectorAll(".likeBtn").forEach(btn => {
+
+        btn.onclick = function () {
+
+            alert("❤️ You liked this post.");
+
+        };
+
+    });
+
+    document.querySelectorAll(".commentBtn").forEach(btn => {
+
+        btn.onclick = function () {
+
+            const comment = prompt("Write your comment:");
+
+            if(comment){
+
+                alert("💬 Comment Added:\n" + comment);
+
+            }
+
+        };
+
+    });
+
+    document.querySelectorAll(".deleteBtn").forEach(btn => {
+
+        btn.onclick = function () {
+
+            if(confirm("Delete this post?")){
+
+                this.parentElement.remove();
+
+            }
+
+        };
+
+    });
+
+}
+
+addEvents();
+
+// Search Posts
+
+searchPost.addEventListener("keyup", function(){
+
+    const value = this.value.toLowerCase();
+
+    const allPosts =
+        document.querySelectorAll(".post-card");
+
+    allPosts.forEach(post=>{
+
+        if(post.innerText.toLowerCase().includes(value)){
+
+            post.style.display="block";
+
+        }else{
+
+            post.style.display="none";
+
+        }
+
+    });
+
+});
