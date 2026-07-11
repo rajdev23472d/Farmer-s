@@ -1,0 +1,106 @@
+/* =====================================
+   Farmer-s App
+   settings.js
+   Volume 10
+===================================== */
+
+const settingsForm = document.getElementById("settingsForm");
+
+// Load Settings
+
+window.onload = function () {
+
+    const settings = JSON.parse(localStorage.getItem("settings"));
+
+    if (settings) {
+
+        document.getElementById("fullName").value =
+            settings.fullName || "";
+
+        document.getElementById("email").value =
+            settings.email || "";
+
+        document.getElementById("language").value =
+            settings.language || "English";
+
+        document.getElementById("theme").value =
+            settings.theme || "Light";
+
+        document.getElementById("notification").checked =
+            settings.notification || false;
+
+        applyTheme(settings.theme);
+
+    }
+
+};
+
+// Save Settings
+
+settingsForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const settings = {
+
+        fullName:
+        document.getElementById("fullName").value,
+
+        email:
+        document.getElementById("email").value,
+
+        language:
+        document.getElementById("language").value,
+
+        theme:
+        document.getElementById("theme").value,
+
+        notification:
+        document.getElementById("notification").checked
+
+    };
+
+    localStorage.setItem(
+        "settings",
+        JSON.stringify(settings)
+    );
+
+    applyTheme(settings.theme);
+
+    alert("✅ Settings Saved Successfully!");
+
+});
+
+// Apply Theme
+
+function applyTheme(theme) {
+
+    if (theme === "Dark") {
+
+        document.body.style.background = "#121212";
+        document.body.style.color = "#ffffff";
+
+    } else {
+
+        document.body.style.background = "#f5fff5";
+        document.body.style.color = "#333333";
+
+    }
+
+}
+
+// Logout
+
+function logout() {
+
+    if (confirm("Are you sure you want to logout?")) {
+
+        localStorage.removeItem("user");
+
+        alert("👋 Logged out successfully.");
+
+        window.location.href = "login.html";
+
+    }
+
+}
