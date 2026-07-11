@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Settings</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚙️ Farmer-s Settings</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="notifications.html">Notifications</a>
+<a href="community.html">Community</a>
+<a href="marketplace.html">Marketplace</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="settings">
+
+<h2>App Settings</h2>
+
+<form id="settingsForm">
+
+<label><b>👤 Full Name</b></label>
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter your name">
+
+<br><br>
+
+<label><b>📧 Email</b></label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email">
+
+<br><br>
+
+<label><b>🌐 Language</b></label>
+
+<select id="language">
+
+<option value="English">English</option>
+
+<option value="Hindi">Hindi</option>
+
+</select>
+
+<br><br>
+
+<label><b>🎨 Theme</b></label>
+
+<select id="theme">
+
+<option value="Light">☀️ Light Mode</option>
+
+<option value="Dark">🌙 Dark Mode</option>
+
+</select>
+
+<br><br>
+
+<label>
+
+<input type="checkbox" id="notification">
+
+🔔 Enable Notifications
+
+</label>
+
+<br><br>
+
+<button type="submit">
+
+💾 Save Settings
+
+</button>
+
+</form>
+
+<br>
+
+<button onclick="logout()">
+
+🚪 Logout
+
+</button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>
