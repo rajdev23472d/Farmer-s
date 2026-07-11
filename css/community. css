@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Community</title>
+
+<link rel="stylesheet" href="css/community.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌾 Farmer-s Community</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="weather.html">Weather</a>
+
+<a href="mandi.html">Mandi</a>
+
+<a href="ai.html">AI</a>
+
+<a href="marketplace.html">Marketplace</a>
+
+<a href="community.html">Community</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="community">
+
+<h2>Farmer Community</h2>
+
+<p>
+Share your farming experience and learn from other farmers.
+</p>
+
+<input
+type="text"
+id="searchPost"
+placeholder="Search posts...">
+
+<br><br>
+
+<textarea
+id="postText"
+rows="5"
+placeholder="Write your farming experience here..."></textarea>
+
+<br><br>
+
+<button id="postBtn">
+📝 Create Post
+</button>
+
+<hr>
+
+<div id="posts">
+
+<div class="post-card">
+
+<h3>👨‍🌾 Rahul Kumar</h3>
+
+<p>
+My paddy crop is growing well after organic fertilizer.
+</p>
+
+<button>👍 Like</button>
+
+<button>💬 Comment</button>
+
+</div>
+
+<div class="post-card">
+
+<h3>🌾 Suresh Singh</h3>
+
+<p>
+Today's rainfall helped my maize field.
+</p>
+
+<button>👍 Like</button>
+
+<button>💬 Comment</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Farmer-s. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/community.js"></script>
+
+</body>
+
+</html>
