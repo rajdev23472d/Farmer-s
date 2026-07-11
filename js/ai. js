@@ -1,0 +1,54 @@
+/* =====================================
+   Farmer-s App
+   AI Detection JS
+   Volume 4
+===================================== */
+
+const imageInput = document.getElementById("imageInput");
+const preview = document.getElementById("preview");
+const detectBtn = document.getElementById("detectBtn");
+
+const result = document.getElementById("result");
+const confidence = document.getElementById("confidence");
+const treatment = document.getElementById("treatment");
+const prevention = document.getElementById("prevention");
+
+// Preview Selected Image
+
+imageInput.addEventListener("change", function () {
+
+    const file = this.files[0];
+
+    if (file) {
+
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+
+            preview.src = e.target.result;
+
+        };
+
+        reader.readAsDataURL(file);
+
+    }
+
+});
+
+// Demo AI Detection
+
+detectBtn.addEventListener("click", function () {
+
+    result.innerHTML = "🌿 Disease: Leaf Blight";
+
+    confidence.innerHTML = "📊 Confidence: 96%";
+
+    treatment.innerHTML =
+        "💊 Treatment: Spray recommended fungicide.";
+
+    prevention.innerHTML =
+        "🌱 Prevention: Avoid excess water and remove infected leaves.";
+
+    alert("AI Detection Completed!");
+
+});
