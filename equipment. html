@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmer-s | Equipment Rental</title>
+
+<link rel="stylesheet" href="css/equipment.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🚜 Farmer-s Equipment Rental</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="weather.html">Weather</a>
+
+<a href="maps.html">Maps</a>
+
+<a href="marketplace.html">Marketplace</a>
+
+<a href="community.html">Community</a>
+
+<a href="equipment.html">Equipment</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="equipment">
+
+<h2>Rent Farming Equipment</h2>
+
+<p>Select the equipment you want to book.</p>
+
+<input
+type="text"
+id="searchEquipment"
+placeholder="Search Equipment...">
+
+<div class="equipment-grid">
+
+<div class="equipment-card">
+
+<img src="images/tractor.jpg" alt="Tractor">
+
+<h3>🚜 Tractor</h3>
+
+<p>Rent: ₹800 / Hour</p>
+
+<button onclick="bookEquipment('Tractor')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/harvester.jpg" alt="Harvester">
+
+<h3>🌾 Harvester</h3>
+
+<p>Rent: ₹2500 / Day</p>
+
+<button onclick="bookEquipment('Harvester')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/rotavator.jpg" alt="Rotavator">
+
+<h3>🌱 Rotavator</h3>
+
+<p>Rent: ₹1200 / Day</p>
+
+<button onclick="bookEquipment('Rotavator')">
+Book Now
+</button>
+
+</div>
+
+<div class="equipment-card">
+
+<img src="images/water-tanker.jpg" alt="Water Tanker">
+
+<h3>💧 Water Tanker</h3>
+
+<p>Rent: ₹600 / Trip</p>
+
+<button onclick="bookEquipment('Water Tanker')">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Farmer-s. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/equipment.js"></script>
+
+</body>
+
+</html>
