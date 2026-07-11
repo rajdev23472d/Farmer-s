@@ -1,0 +1,81 @@
+/* =====================================
+   Farmer-s App
+   government.js
+   Volume 5
+===================================== */
+
+// Search Government Schemes
+
+const searchBox = document.getElementById("searchBox");
+const schemeCards = document.querySelectorAll(".scheme-card");
+
+searchBox.addEventListener("keyup", function () {
+
+    const searchValue = searchBox.value.toLowerCase();
+
+    schemeCards.forEach(function (card) {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(searchValue)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+// View Details Button
+
+const buttons = document.querySelectorAll(".scheme-card button");
+
+buttons.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        const scheme =
+            this.parentElement.querySelector("h3").innerText;
+
+        let details = "";
+
+        switch(scheme){
+
+            case "🌾 PM-KISAN":
+                details =
+                "PM-KISAN provides ₹6,000 per year to eligible farmers in three installments.";
+                break;
+
+            case "🌱 Soil Health Card":
+                details =
+                "Soil Health Card provides soil testing reports and fertilizer recommendations.";
+                break;
+
+            case "🛡️ PM Fasal Bima Yojana":
+                details =
+                "Crop insurance protects farmers from losses caused by natural disasters.";
+                break;
+
+            case "💳 Kisan Credit Card (KCC)":
+                details =
+                "KCC offers low-interest agricultural loans for farming needs.";
+                break;
+
+            default:
+                details = "Scheme details will be updated soon.";
+        }
+
+        alert(details);
+
+    });
+
+});
+
+// Welcome Message
+
+window.onload = function(){
+
+    console.log("Government Schemes Module Loaded");
+
+};
