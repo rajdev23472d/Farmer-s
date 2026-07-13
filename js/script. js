@@ -1,0 +1,13 @@
+// Farmer's App - script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Farmer's App Loaded Successfully!");
+
+    const btn = document.querySelector("button");
+
+    if (btn) {
+        btn.addEventListener("click", function () {
+            alert("👨‍🌾 Welcome to Farmer's App!");
+        });
+    }
+});
